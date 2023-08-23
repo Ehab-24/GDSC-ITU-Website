@@ -21,7 +21,9 @@
   />
 
   <!-- main content -->
-  <main class=" absolute w-screen h-[70vh] flex flex-col gap-32 pb-20">
+  <main
+    class=" absolute mt-10 md:mt-0 w-screen h-[70vh] flex flex-col gap-32 pb-20"
+  >
     <div
       class=" flex flex-col gap-12 w-full md:w-2/3 xl:w-2/5 self-center h-full justify-end items-center"
     >
@@ -33,7 +35,9 @@
         <span class=" text-yellow-500">S</span>tudent
         <span class=" text-green-700">C</span>lub
       </h1>
-      <p class=" dark:text-[#bababa] text-slate-500 text-center tracking-wide">
+      <p
+        class=" px-4 md:px-0 dark:text-[#bababa] text-slate-500 text-center tracking-wide"
+      >
         Unleash innovation with the exceptional Google Developer Student Club at
         <span class=" font-mono font-bold text-green-500 dark:text-green-400"
           >Information Technology University</span

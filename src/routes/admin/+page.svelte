@@ -106,7 +106,9 @@
 <div
   class=" px-4 md:px-20 xl:px-40 bg-slate-100 dark:bg-slate-900 min-h-screen py-20 flex flex-col gap-4 items-center"
 >
-  <h2 class=" text-5xl mb-16 font-bold text-gray-700 dark:text-gray-300">
+  <h2
+    class=" text-center text-5xl mb-16 font-bold text-gray-700 dark:text-gray-300"
+  >
     Number of applicants: {data.applications.length}
   </h2>
 
