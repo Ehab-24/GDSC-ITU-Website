@@ -104,9 +104,9 @@
 {/if}
 
 <div
-  class=" px-4 md:px-20 xl:px-40 bg-slate-100 min-h-screen py-20 flex flex-col gap-4 items-center"
+  class=" px-4 md:px-20 xl:px-40 bg-slate-100 dark:bg-slate-900 min-h-screen py-20 flex flex-col gap-4 items-center"
 >
-  <h2 class=" text-5xl mb-16 font-bold text-gray-700">
+  <h2 class=" text-5xl mb-16 font-bold text-gray-700 dark:text-gray-300">
     Number of applicants: {data.applications.length}
   </h2>
 
@@ -147,7 +147,7 @@
       <tbody>
         {#each data.applications as a, index (a._id)}
           <tr
-            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-slate-800 transition-all"
           >
             <td class="px-6 py-4">{index + 1}</td>
             <th
