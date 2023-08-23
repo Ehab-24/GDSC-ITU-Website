@@ -119,7 +119,9 @@
     <div class="w-5 text-gray-500">
       <MdContentCopy />
     </div>
-    <p class=" text-gray-700 text-sm">copy emails (space separated)</p>
+    <p class=" text-gray-700 dark:text-gray-300 text-sm">
+      copy emails (space separated)
+    </p>
   </button>
 
   <div
