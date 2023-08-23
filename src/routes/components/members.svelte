@@ -9,21 +9,21 @@
       name: "Muhammad Amin",
       position: "GDSC Lead",
       bio: "Don't judge a cover b... don't book a judg... don't cover... Ah! Whatever, just DON'T DO IT!",
-      link: "https://tailwindcss.com/",
-    },
-    {
-      id: "bscs21024",
-      name: "Ehab Sohail",
-      position: "Tech Lead",
-      bio: "I am a son, a brother and a father. Father of an unborn child.",
-      link: "",
+      link: "https://www.linkedin.com/in/muhammadaminyahya/",
     },
     {
       id: "bscs21099",
       name: "Saad Ahmad",
       position: "Co-Lead",
       bio: "I like drugs. But I fo Leetcode instead.",
-      link: "",
+      link: "https://www.linkedin.com/in/saadxahmed/",
+    },
+    {
+      id: "bscs21024",
+      name: "Ehab Sohail",
+      position: "Tech Lead",
+      bio: "I am a son, a brother and a father. Father of an unborn child.",
+      link: "https://www.linkedin.com/in/ehab-sohail-7a768223b/",
     },
   ];
   const members2: Member[] = [
@@ -32,21 +32,21 @@
       name: "Raja Uzair",
       position: "Events Head",
       bio: "People think I smoke. I ONLY ROCK!",
-      link: "",
+      link: "https://www.linkedin.com/in/raja-uzair-a9141927b/",
     },
     {
       id: "bscs21091",
       name: "Muzammil Ali",
       position: "Head Graphic Designer",
       bio: "If I am the one you are looking for, you need glasses.",
-      link: "",
+      link: "https://www.linkedin.com/search/results/all/?keywords=gdsc%20itu&origin=GLOBAL_SEARCH_HEADER&sid=kMj",
     },
     {
       id: "bscs21083",
       name: "Zain Faraz",
       position: "CP Lead",
       bio: "I am Zain Faraz and I have no filter...Except for an air filter, and a water filer and....",
-      link: "",
+      link: "https://www.linkedin.com/in/muhammad-zain-faraz-769101247/",
     },
   ];
   const members3: Member[] = [
@@ -55,14 +55,14 @@
       name: "Muhammad Affan Waseem",
       position: "Marketing Lead",
       bio: "I am the reason ITU's lifts have limits.",
-      link: "",
+      link: "https://www.linkedin.com/in/muhammad-affan-waseem-60009b1b2/",
     },
     {
       id: "bscs21084",
       name: "Zain Razzaq",
       position: "General Secretary",
       bio: "Ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
-      link: "",
+      link: "https://www.linkedin.com/in/zain-razzaq-96a084228/",
     },
   ];
 </script>
