@@ -2,6 +2,7 @@
   import ToastSuccess from "../components/toast-success.svelte";
   import ToastError from "../components/toast-error.svelte";
   import MdContentCopy from "svelte-icons/md/MdContentCopy.svelte";
+  import FaTrashAlt from "svelte-icons/fa/FaTrashAlt.svelte";
 
   export let data;
 
@@ -55,6 +56,22 @@
         status: "rejected",
       };
       showSuccess("Application rejected!");
+    } else {
+      showError();
+    }
+  }
+
+  async function deleteApplication(id: string) {
+    const { status } = await fetch(`?id=${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (status === 200) {
+      data.applications = data.applications.filter((a) => a._id !== id);
+      showSuccess("Application deleted!");
     } else {
       showError();
     }
@@ -122,6 +139,9 @@
           <th scope="col" class="px-6 py-3">
             <span class="sr-only">Edit</span>
           </th>
+          <th scope="col" class="px-6 py-3">
+            <span class="sr-only">Delete</span>
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -149,15 +169,24 @@
             <td class="px-6 py-4 text-right">
               <button
                 on:click={() => approveApplication(a._id || "")}
-                class="font-medium text-xs text-green-600 dark:text-green-500 hover:underline"
+                class="font-medium text-xs text-green-500 hover:underline"
                 >Approve</button
               >
               &nbsp;
               <button
                 on:click={() => rejectApplication(a._id || "")}
-                class="font-medium text-xs text-red-600 dark:text-red-500 hover:underline"
+                class="font-medium text-xs text-orange-500 hover:underline"
                 >Reject</button
               >
+            </td>
+
+            <td class="px-6 py-4 text-right">
+              <button
+                on:click={() => deleteApplication(a._id || "")}
+                class="font-medium text-xs w-7 p-2 rounded-full hover:bg-black/[0.05] dark:hover:bg-white/10 text-gray-400 hover:underline"
+              >
+                <FaTrashAlt />
+              </button>
             </td>
           </tr>
         {/each}

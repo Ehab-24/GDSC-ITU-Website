@@ -1,5 +1,5 @@
 import type { Application } from "$lib/types";
-import { ObjectId, type UpdateResult } from "mongodb";
+import { ObjectId, type DeleteResult, type UpdateResult } from "mongodb";
 import db from ".";
 
 export async function getApplications(): Promise<Application[]> {
@@ -19,5 +19,12 @@ export async function updateApplicationStatus(
   const res = await db
     .collection("applications")
     .updateOne({ _id: new ObjectId(id) }, { $set: { status } });
+  return res;
+}
+
+export async function deleteApplication(id: string): Promise<DeleteResult> {
+  const res = await db
+    .collection("applications")
+    .deleteOne({ _id: new ObjectId(id) });
   return res;
 }
