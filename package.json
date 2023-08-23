@@ -23,6 +23,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"mongodb": "^5.8.0",
 		"svelte-icons": "^2.1.0"
 	}
 }
