@@ -1,5 +1,5 @@
 <script lang="ts">
-  import beams from "../../assets/img/0-beams.png";
+  import beams from "../../assets/img/0-beams.webp";
   import CTA from "./cta.svelte";
 </script>
 

@@ -3,7 +3,7 @@
   import Hero from "./components/hero.svelte";
   import Members from "./components/members.svelte";
 
-  import beams from "../assets/img/1-beams.png";
+  import beams from "../assets/img/1-beams.webp";
   import ToastSuccess from "./components/toast-success.svelte";
   import ToastError from "./components/toast-error.svelte";
 

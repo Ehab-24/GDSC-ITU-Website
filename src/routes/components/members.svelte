@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Member } from "$lib/types";
   import MemberCard from "./member-card.svelte";
-  import gdsc_itu from "../../assets/img/gdsc-itu.png";
+  import gdsc_itu from "../../assets/img/gdsc-itu.webp";
 
   const members1: Member[] = [
     {
