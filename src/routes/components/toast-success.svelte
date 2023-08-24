@@ -8,7 +8,7 @@
 
 <div
   transition:fly={{ easing: quadInOut, y: 60 }}
-  class=" fixed bottom-8 left-1/2 flex items-center gap-4 justify-center -translate-x-1/2 shadow-2xl shadow-black/20 dark:shadow-white/10 rounded-md bg-slate-200 z-[60] dark:bg-slate-800 py-4 px-12"
+  class=" fixed w-max bottom-8 left-1/2 flex items-center gap-4 justify-center -translate-x-1/2 shadow-2xl shadow-black/20 dark:shadow-white/10 rounded-md bg-slate-200 z-[60] dark:bg-slate-800 py-4 px-12"
 >
   <div
     class=" w-8 p-2 text-slate-200 bg-green-500 rounded-full grid place-items-center"
