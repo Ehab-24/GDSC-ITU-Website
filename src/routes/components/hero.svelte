@@ -24,10 +24,10 @@
 
   <!-- main content -->
   <main
-    class=" absolute mt-10 px-4 md:px-0 md:mt-0 w-screen min-h-[90vh] md:min-h-[70vh] md:h-[70vh] flex flex-col gap-32 pb-20"
+    class=" absolute mt-10 px-4 md:px-0 md:mt-0 w-screen min-h-[90vh] md:min-h-[70vh] md:h-[70vh] flex flex-col justify-center gap-32 pb-20"
   >
     <div
-      class=" flex flex-col gap-12 w-full md:w-2/3 xl:w-2/5 self-center h-full justify-center md:justify-end items-center"
+      class=" flex flex-col gap-12 w-full md:w-2/3 xl:w-2/5 self-center h-full justify-end md:justify-end items-center"
     >
       <h1
         class=" text-6xl md:text-7xl font-bold text-center text-zinc-700 dark:text-white tracking-tight"

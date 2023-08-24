@@ -3,7 +3,7 @@
   import Hero from "./components/hero.svelte";
   import Members from "./components/members.svelte";
 
-  import web_qr_code from "../assets/img/gdsc-itu-qr-code.webp";
+  import qr_code from "../assets/img/qr-code.jpeg";
   import beams from "../assets/img/1-beams.webp";
   import ToastSuccess from "./components/toast-success.svelte";
   import ToastError from "./components/toast-error.svelte";
@@ -77,7 +77,7 @@
       loading="lazy"
       class=" w-full max-w-[420px] shadow-2xl shadow-black/20 dark:shadow-green-200/10"
       alt="gdsc website qr code"
-      src={web_qr_code}
+      src={qr_code}
     />
   </div>
 </div>
