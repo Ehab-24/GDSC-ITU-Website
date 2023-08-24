@@ -4,8 +4,10 @@
 </script>
 
 <footer
-  class=" w-full flex flex-col gap-6 justify-end items-center py-8 px-4 md:px-20 xl:px-40"
+  class=" w-full flex flex-col gap-6 justify-end items-center pb-12 px-4 md:px-20 xl:px-40"
 >
+  <div class=" w-1/2 bg-gray-300 h-px mb-12" />
+
   <div class=" w-full flex justify-center items-center gap-6">
     <a
       target="_blank"

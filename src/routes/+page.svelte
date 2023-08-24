@@ -3,6 +3,7 @@
   import Hero from "./components/hero.svelte";
   import Members from "./components/members.svelte";
 
+  import web_qr_code from "../assets/img/gdsc-itu-qr-code.webp";
   import beams from "../assets/img/1-beams.webp";
   import ToastSuccess from "./components/toast-success.svelte";
   import ToastError from "./components/toast-error.svelte";
@@ -44,7 +45,7 @@
   <Hero />
   <Members />
   <div
-    class=" w-full h-max relative overflow-hidden py-20"
+    class=" w-full h-max relative overflow-hidden"
     style="mask-image: linear-gradient(to top, transparent, black); webkit-mask-image: linear-gradient(to top, transparent, black"
   >
     <div
@@ -57,5 +58,12 @@
       alt="beams"
     />
     <ApplicationForm className="z-50" />
+  </div>
+  <div class=" w-full pb-20 grid place-items-center">
+    <img
+      class=" w-full max-w-[420px] shadow-2xl shadow-black/20 dark:shadow-green-200/10"
+      alt="gdsc website qr code"
+      src={web_qr_code}
+    />
   </div>
 </div>
