@@ -4,18 +4,18 @@
 </script>
 
 <div
-  class=" w-screen min-h-[90vh] h-max md:h-[70vh] overflow-x-hidden grid grid-cols-[24] grid-rows-[13] bg-grid"
+  class=" w-screen min-h-[90vh] md:min-h-[70vh] md:h-[70vh] overflow-x-hidden grid grid-cols-[24] grid-rows-[13] bg-grid"
   style="mask-image: linear-gradient(to bottom, transparent, black);
   webkit-mask-image: linear-gradient(to bottom, transparent, black);"
 >
   <!-- background -->
   <div
-    class=" absolute w-screen min-h-[90vh] h-max md:h-[70vh] overflow-hidden"
+    class=" absolute w-screen min-h-[90vh] md:min-h-[70vh] md:h-[70vh] overflow-hidden"
   >
     <img
       alt="hero background"
       src={beams}
-      class="opacity-30 w-screen min-h-[90vh] h-max md:h-[70vh] scale-x-[2] md:scale-x-150 rotate-90 md:rotate-0"
+      class="opacity-30 w-screen min-h-[90vh] md:min-h-[70vh] md:h-[70vh] scale-x-[2] md:scale-x-150 rotate-90 md:rotate-0"
     />
   </div>
   <div
@@ -24,7 +24,7 @@
 
   <!-- main content -->
   <main
-    class=" absolute mt-10 px-4 md:px-0 md:mt-0 w-screen min-h-[90vh] h-max md:h-[70vh] flex flex-col gap-32 pb-20"
+    class=" absolute mt-10 px-4 md:px-0 md:mt-0 w-screen min-h-[90vh] md:min-h-[70vh] md:h-[70vh] flex flex-col gap-32 pb-20"
   >
     <div
       class=" flex flex-col gap-12 w-full md:w-2/3 xl:w-2/5 self-center h-full justify-center md:justify-end items-center"
