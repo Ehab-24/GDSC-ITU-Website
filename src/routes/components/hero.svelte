@@ -28,14 +28,16 @@
       class=" flex flex-col gap-12 w-full md:w-2/3 xl:w-2/5 self-center h-full justify-center md:justify-end items-center"
     >
       <h1
-        class=" text-7xl font-bold text-center text-zinc-700 dark:text-white tracking-tight"
+        class=" text-6xl md:text-7xl font-bold text-center text-zinc-700 dark:text-white tracking-tight"
       >
         <span class=" text-blue-700">G</span>oogle
         <span class=" text-red-600">D</span>eveloper
         <span class=" text-yellow-500">S</span>tudent
         <span class=" text-green-700">C</span>lub
       </h1>
-      <p class=" dark:text-[#bababa] text-slate-500 text-center tracking-wide">
+      <p
+        class=" dark:text-[#bababa] text-sm md:text-base text-slate-500 text-center tracking-wide"
+      >
         Unleash innovation with the exceptional Google Developer Student Club at
         <span class=" font-mono font-bold text-green-500 dark:text-green-400"
           >Information Technology University</span
