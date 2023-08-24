@@ -16,13 +16,13 @@
       <img
         src={gdsc_logo}
         alt="GDSC ITU website"
-        class=" w-6 aspect-square grayscale hover:grayscale-0 transition-all"
+        class=" w-6 aspect-square md:grayscale hover:grayscale-0 transition-all"
       />
     </a>
     <a
       href="https://www.linkedin.com/company/dsc-itu/?originalSubdomain=pk"
       target="_blank"
-      class=" w-5 text-gray-500 hover:text-[#0072b1] dark:text-gray-400 transition-all"
+      class=" w-5 text-[#0072b1] md:text-gray-500 hover:text-[#0072b1] dark:text-gray-400 transition-all"
     >
       <FaLinkedin />
     </a>

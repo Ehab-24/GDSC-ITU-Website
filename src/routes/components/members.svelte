@@ -34,7 +34,7 @@
       image: me,
       position: "Tech Lead",
       bio: "I am a son, a brother and a father. A father of an unborn child.",
-      link: "https://www.linkedin.com/in/ehab-sohail-7a768223b/",
+      link: "https://portfolio-ehab-24.vercel.app/",
     },
   ];
   const members2: Member[] = [
