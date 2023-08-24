@@ -36,7 +36,13 @@
         label="Full Name"
         placeholder="Elon Musk"
       >
-        <img src={user} alt="user icon" class=" w-5" slot="icon" />
+        <img
+          loading="lazy"
+          src={user}
+          alt="user icon"
+          class=" w-5"
+          slot="icon"
+        />
       </Input>
       <Input
         required
@@ -46,7 +52,13 @@
         label="Your Email"
         placeholder="name@domain.com"
       >
-        <img src={email} alt="email icon" class=" w-5" slot="icon" />
+        <img
+          loading="lazy"
+          src={email}
+          alt="email icon"
+          class=" w-5"
+          slot="icon"
+        />
       </Input>
       <Input
         required
@@ -55,7 +67,13 @@
         label="Roll Number"
         placeholder="bscs23012"
       >
-        <img src={email} alt="email icon" class=" w-5" slot="icon" />
+        <img
+          loading="lazy"
+          src={email}
+          alt="email icon"
+          class=" w-5"
+          slot="icon"
+        />
       </Input>
       <Input
         required

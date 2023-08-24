@@ -97,6 +97,7 @@
     <div class="hidden md:block">
       <div class=" h-full grid place-items-center">
         <img
+          loading="lazy"
           src={gdsc_itu}
           alt="google developer student club - information technology university"
           class=" w-4/5 self-center"

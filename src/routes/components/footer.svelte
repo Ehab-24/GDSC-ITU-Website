@@ -15,7 +15,7 @@
     >
       <img
         src={gdsc_logo}
-        alt="GDSC ITU website"
+        alt="GDSC ITU community website"
         class=" w-6 aspect-square md:grayscale hover:grayscale-0 transition-all"
       />
     </a>
@@ -24,6 +24,9 @@
       target="_blank"
       class=" w-5 text-[#0072b1] md:text-gray-500 hover:text-[#0072b1] dark:text-gray-400 transition-all"
     >
+      <p class=" sr-only">
+        google developers student club - information technology university
+      </p>
       <FaLinkedin />
     </a>
   </div>

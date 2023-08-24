@@ -12,6 +12,7 @@
 >
   <div class=" w-full gap-4 flex items-center">
     <img
+      loading="lazy"
       src={member.image}
       alt={member.name}
       class=" w-14 aspect-square rounded-full object-cover"
