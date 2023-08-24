@@ -3,6 +3,7 @@ export type Member = {
   name: string;
   position: string;
   bio: string;
+  image: string;
   link: string;
 };
 

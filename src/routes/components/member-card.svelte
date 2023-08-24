@@ -12,7 +12,7 @@
 >
   <div class=" w-full gap-4 flex items-center">
     <img
-      src="https://loremflickr.com/640/480/nature"
+      src={member.image}
       alt={member.name}
       class=" w-14 aspect-square rounded-full object-cover"
     />
