@@ -135,7 +135,7 @@
       <fieldset class="flex flex-wrap gap-8 justify-center w-full">
         <Radio name="team" value="marketing" id="marketing">Marketing</Radio>
         <Radio name="team" value="event" id="event">Event Management</Radio>
-        <Radio name="team" value="finance" id="finance">Design</Radio>
+        <Radio name="team" value="design" id="design">Design</Radio>
       </fieldset>
     </div>
 
