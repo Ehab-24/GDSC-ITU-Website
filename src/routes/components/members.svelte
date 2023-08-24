@@ -15,14 +15,14 @@
       id: "bscs21099",
       name: "Saad Ahmad",
       position: "Co-Lead",
-      bio: "I like drugs. But I fo Leetcode instead.",
+      bio: "I like drugs. But I do Leetcode instead.",
       link: "https://www.linkedin.com/in/saadxahmed/",
     },
     {
       id: "bscs21024",
       name: "Ehab Sohail",
       position: "Tech Lead",
-      bio: "I am a son, a brother and a father. Father of an unborn child.",
+      bio: "I am a son, a brother and a father. A father of an unborn child.",
       link: "https://www.linkedin.com/in/ehab-sohail-7a768223b/",
     },
   ];
@@ -36,7 +36,7 @@
     },
     {
       id: "bscs21091",
-      name: "Muzammil Ali",
+      name: "Muzamil Ali",
       position: "Head Graphic Designer",
       bio: "If I am the one you are looking for, you need glasses.",
       link: "https://www.linkedin.com/search/results/all/?keywords=gdsc%20itu&origin=GLOBAL_SEARCH_HEADER&sid=kMj",
@@ -45,7 +45,7 @@
       id: "bscs21083",
       name: "Zain Faraz",
       position: "CP Lead",
-      bio: "I am Zain Faraz and I have no filter...Except for an air filter, and a water filer and....",
+      bio: "I am Zain Faraz and I have no filter...Except for an air filter, and a water filter and....",
       link: "https://www.linkedin.com/in/muhammad-zain-faraz-769101247/",
     },
   ];
@@ -61,7 +61,7 @@
       id: "bscs21084",
       name: "Zain Razzaq",
       position: "General Secretary",
-      bio: "Ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+      bio: '"Ye 2 saal parh lo uske aage zindgai asaan ha"',
       link: "https://www.linkedin.com/in/zain-razzaq-96a084228/",
     },
   ];
