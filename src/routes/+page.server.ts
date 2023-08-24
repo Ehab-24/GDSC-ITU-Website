@@ -33,18 +33,27 @@ function validateStudentId(id: string): boolean {
   return true;
 }
 
-function validateApplication(a: Application): boolean {
+function validateApplication(a: Application): {
+  valid: boolean;
+  message: string;
+} {
   const validStudentId = validateStudentId(a.studentId);
   const validContact = validatePhoneNumber(a.contact);
-  return (
+  const valid =
     !!a.fullName &&
     !!a.email &&
     !!validContact &&
     !!validStudentId &&
     !!a.department &&
     !!a.reason &&
-    !!a.team
-  );
+    !!a.team;
+  let message = "Missing required field!";
+  if (!validContact) {
+    message = "Invalid contact number!";
+  } else if (!validStudentId) {
+    message = "Invalid roll number!";
+  }
+  return { valid, message };
 }
 
 export const actions = {
@@ -64,8 +73,9 @@ export const actions = {
       createdAt: new Date(),
     };
 
-    if (!validateApplication(application)) {
-      return fail(400, { success: false, message: "Invalid form data!" });
+    const validity = validateApplication(application);
+    if (!validity.valid) {
+      return fail(400, { success: false, message: validity.message });
     }
 
     const duplicate = await db.collection("applications").findOne({
