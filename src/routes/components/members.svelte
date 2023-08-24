@@ -9,6 +9,7 @@
   import zainRazzaq from "../../assets/img/zain-razzaq.webp";
   import rajaUzair from "../../assets/img/raja-uzair.webp";
   import saadAhmad from "../../assets/img/saad-ahmad.webp";
+  import muzamilAli from "../../assets/img/muzamil-ali.webp";
   import me from "../../assets/img/ehab-sohail.webp";
 
   const members1: Member[] = [
@@ -49,8 +50,7 @@
     {
       id: "bscs21091",
       name: "Muzamil Ali",
-      image:
-        "https://loremflickr.com/cache/resized/65535_52729146932_b9d4d6aaff_m_160_120_nofilter.jpg",
+      image: muzamilAli,
       position: "Head Graphic Designer",
       bio: "If I am the one you are looking for, you need glasses.",
       link: "https://www.linkedin.com/search/results/all/?keywords=gdsc%20itu&origin=GLOBAL_SEARCH_HEADER&sid=kMj",
