@@ -4,12 +4,43 @@ import { fail } from "@sveltejs/kit";
 
 export const ssr = true;
 
+function validatePhoneNumber(ph: string): boolean {
+  var r = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+  return r.test(ph);
+}
+function validateStudentId(id: string): boolean {
+  id = id.toLowerCase();
+
+  if (![9, 10].includes(id.length)) {
+    return false;
+  }
+  if (!["bs", "ms"].includes(id.substring(0, 2))) {
+    return false;
+  }
+  id = id.substring(2);
+  if (
+    !["cs", "ce", "ai", "se", "ee", "mt"].includes(id.substring(0, 2)) &&
+    id.substring(0, 3) !== "eds"
+  ) {
+    return false;
+  }
+
+  id = id.substring(id.length - 5);
+  const batchNumber = parseInt(id);
+  if (batchNumber > 23999 || batchNumber < 20000) {
+    return false;
+  }
+  return true;
+}
+
 function validateApplication(a: Application): boolean {
+  const validStudentId = validateStudentId(a.studentId);
+  const validContact = validatePhoneNumber(a.contact);
   return (
     !!a.fullName &&
     !!a.email &&
-    !!a.contact &&
-    !!a.studentId &&
+    !!validContact &&
+    !!validStudentId &&
     !!a.department &&
     !!a.reason &&
     !!a.team
@@ -34,7 +65,18 @@ export const actions = {
     };
 
     if (!validateApplication(application)) {
-      return fail(400);
+      return fail(400, { success: false, message: "Invalid form data!" });
+    }
+
+    const duplicate = await db.collection("applications").findOne({
+      $or: [{ email: application.email }, { studentId: application.studentId }],
+    });
+    const message =
+      duplicate?.email === application.email
+        ? "Email already registered!"
+        : "Roll number already registered!";
+    if (duplicate !== null) {
+      return fail(409, { success: false, message });
     }
 
     try {

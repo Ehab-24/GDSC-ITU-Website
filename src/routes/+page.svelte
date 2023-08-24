@@ -9,17 +9,21 @@
   import ToastError from "./components/toast-error.svelte";
 
   export let form;
-  export let success: boolean = false;
-  export let error: boolean = false;
+  let success: boolean = false;
+  let error: boolean = false;
+  let successText: string = "";
+  let errorText: string = "";
 
-  function showSuccess() {
+  function showSuccess(text = "Application Recieved!") {
     success = true;
+    successText = text;
     setTimeout(() => {
       success = false;
     }, 3000);
   }
-  function showError() {
+  function showError(text = "Oops! An Error Occurred.") {
     error = true;
+    errorText = text;
     setTimeout(() => {
       error = false;
     }, 3000);
@@ -29,22 +33,24 @@
     if (form?.success) {
       showSuccess();
     } else if (form?.success === false) {
-      showError();
+      form.message ? showError(form.message) : showError();
     }
   }
 </script>
 
-<title>GDSC ITU</title>
-<meta
-  name="description"
-  content="Google Developer Student Club society of Information Technology University of Punjab, Pakistan"
-/>
+<svelte:head>
+  <title>GDSC ITU</title>
+  <meta
+    name="description"
+    content="Google Developer Student Club society of Information Technology University of Punjab, Pakistan"
+  />
+</svelte:head>
 
 {#if success}
-  <ToastSuccess text="Application Recieved!" />
+  <ToastSuccess text={successText} />
 {/if}
 {#if error}
-  <ToastError text="Oops! An Error Occurred." />
+  <ToastError text={errorText} />
 {/if}
 
 <div class=" w-screen flex flex-col gap-40 overflow-x-hidden">

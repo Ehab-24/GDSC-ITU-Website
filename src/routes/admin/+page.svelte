@@ -96,8 +96,10 @@
   }
 </script>
 
-<title>GDSC ITU | Admin</title>
-<meta name="description" content="Admin page only meant for site admins" />
+<svelte:head>
+  <title>GDSC ITU | Admin</title>
+  <meta name="description" content="Admin page only meant for site admins" />
+</svelte:head>
 
 {#if success}
   <ToastSuccess text={successText} />
