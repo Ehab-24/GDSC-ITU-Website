@@ -34,6 +34,12 @@
   }
 </script>
 
+<title>GDSC ITU</title>
+<meta
+  name="description"
+  content="Google Developer Student Club society of Information Technology University of Punjab, Pakistan"
+/>
+
 {#if success}
   <ToastSuccess text="Application Recieved!" />
 {/if}

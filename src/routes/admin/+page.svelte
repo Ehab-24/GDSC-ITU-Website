@@ -96,6 +96,9 @@
   }
 </script>
 
+<title>GDSC ITU | Admin</title>
+<meta name="description" content="Admin page only meant for site admins" />
+
 {#if success}
   <ToastSuccess text={successText} />
 {/if}
