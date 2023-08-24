@@ -51,7 +51,7 @@
   <Hero />
   <Members />
   <div
-    class=" w-full h-max relative overflow-hidden"
+    class=" h-max relative overflow-hidden"
     style="mask-image: linear-gradient(to top, transparent, black); webkit-mask-image: linear-gradient(to top, transparent, black"
   >
     <div

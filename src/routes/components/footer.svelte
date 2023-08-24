@@ -14,6 +14,7 @@
       href="https://gdsc.community.dev/information-technology-university/"
     >
       <img
+        loading="lazy"
         src={gdsc_logo}
         alt="GDSC ITU community website"
         class=" w-6 aspect-square md:grayscale hover:grayscale-0 transition-all"
