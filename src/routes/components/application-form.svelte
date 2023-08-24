@@ -116,13 +116,8 @@
       <h2 class=" text-xl font-bold text-gray-500 dark:text-gray-300">Team</h2>
       <fieldset class="flex flex-wrap gap-8 justify-center w-full">
         <Radio name="team" value="marketing" id="marketing">Marketing</Radio>
-        <Radio name="team" value="finance" id="finance">Finance</Radio>
         <Radio name="team" value="event" id="event">Event Management</Radio>
-        <Radio name="team" value="external-affairs" id="external-affairs"
-          >External Affairs (Sponserships and Partnerships)</Radio
-        >
-        <Radio name="team" value="technical" id="technical">Technical</Radio>
-        <Radio name="team" value="design" id="design">Design</Radio>
+        <Radio name="team" value="finance" id="finance">Design</Radio>
       </fieldset>
     </div>
 

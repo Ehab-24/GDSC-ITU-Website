@@ -40,9 +40,7 @@
   <ToastError text="Oops! An Error Occurred." />
 {/if}
 
-<div
-  class=" w-screen flex flex-col gap-40 overflow-x-hidden bg-slate-100 dark:bg-slate-900"
->
+<div class=" w-screen flex flex-col gap-40 overflow-x-hidden">
   <Hero />
   <Members />
   <div
