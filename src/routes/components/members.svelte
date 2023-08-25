@@ -53,7 +53,7 @@
       image: muzamilAli,
       position: "Head Graphic Designer",
       bio: "If I am the one you are looking for, you need glasses.",
-      link: "https://www.linkedin.com/search/results/all/?keywords=gdsc%20itu&origin=GLOBAL_SEARCH_HEADER&sid=kMj",
+      link: "https://www.linkedin.com/in/muzamil-ali-585695218",
     },
     {
       id: "bscs21083",
