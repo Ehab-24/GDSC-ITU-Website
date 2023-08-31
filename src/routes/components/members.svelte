@@ -60,7 +60,7 @@
       name: "Zain Faraz",
       image: zainFaraz,
       position: "CP Lead",
-      bio: "I am Zain Faraz and I have no filter...Except for an air filter, and a water filter and....",
+      bio: "I am Zain Faraz, I like technical shit and I have no filter...Except for an air filter, and a water filter and....",
       link: "https://www.linkedin.com/in/muhammad-zain-faraz-769101247/",
     },
   ];
@@ -78,7 +78,7 @@
       name: "Zain Razzaq",
       image: zainRazzaq,
       position: "General Secretary",
-      bio: '"Ye 2 saal parh lo uske aage zindgai asaan ha"',
+      bio: '"Ye 2 saal parh lo uske aage zindagi asaan ha"',
       link: "https://www.linkedin.com/in/zain-razzaq-96a084228/",
     },
   ];

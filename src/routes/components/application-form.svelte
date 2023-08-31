@@ -50,7 +50,7 @@
         id="email"
         type="email"
         label="Your Email"
-        placeholder="name@domain.com"
+        placeholder="rollno@itu.edu.pk"
       >
         <img
           loading="lazy"

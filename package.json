@@ -23,6 +23,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@google-cloud/local-auth": "2.1.0",
+		"google-auth-library": "^9.0.0",
+		"googleapis": "105",
 		"mongodb": "^5.8.0",
 		"svelte-icons": "^2.1.0"
 	}
