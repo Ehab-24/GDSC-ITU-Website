@@ -71,6 +71,7 @@
       alt="beams"
     />
     <ApplicationForm className="z-50" />
+    <div class=" h-12" />
   </div>
   <div class=" w-full pb-20 grid place-items-center">
     <img

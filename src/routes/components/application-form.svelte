@@ -10,6 +10,8 @@
   import { enhance } from "$app/forms";
 
   export let className: string = "";
+
+  let loading = false;
 </script>
 
 <div
@@ -26,7 +28,16 @@
   <form
     class=" w-full flex flex-col items-center gap-12"
     method="POST"
-    use:enhance
+    use:enhance={() => {
+      loading = true;
+      console.log(loading);
+
+      return async ({ update }) => {
+        await update();
+        loading = false;
+        console.log(loading);
+      };
+    }}
   >
     <div class=" w-full grid grid-cols-1 gap-8 md:grid-cols-2">
       <Input
@@ -81,7 +92,7 @@
         id="contact-number"
         label="Contact Number"
         type="number"
-        placeholder="3245772901"
+        placeholder="03245772901"
       >
         <div slot="icon" class="w-5 aspect-square text-gray-400">
           <FaPhone />
@@ -151,6 +162,8 @@
       placeholder="Prior experience (if any)"
     />
 
-    <CTA type="submit" className="w-32 h-10 self-end">Submit</CTA>
+    <CTA disabled={loading} type="submit" className="w-32 h-10 self-end"
+      >Submit</CTA
+    >
   </form>
 </div>

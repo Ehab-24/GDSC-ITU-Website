@@ -13,7 +13,7 @@
   {type}
   {disabled}
   on:click={onClick}
-  class={" rounded-md flex items-center justify-center text-white font-bold bg-green-500 hover:bg-green-600 transition-all " +
+  class={" rounded-md flex items-center justify-center text-white font-bold bg-green-500 hover:bg-green-600 disabled:bg-gray-500 disabled:hover:bg-gray-500 transition-all " +
     className}
 >
   <slot />
