@@ -2,8 +2,7 @@
   import type { Member } from "$lib/types";
   import MemberCard from "./member-card.svelte";
   import gdsc_itu from "../../assets/img/gdsc-itu.webp";
-
-  import aminYayha from "../../assets/img/amin-yahya.webp";
+  import aminYayha from "../../assets/img/amin-yahya.jpg";
   import affanWaseem from "../../assets/img/affan-waseem.webp";
   import zainFaraz from "../../assets/img/zain-faraz.webp";
   import zainRazzaq from "../../assets/img/zain-razzaq.webp";
