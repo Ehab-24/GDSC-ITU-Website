@@ -3,6 +3,7 @@
   import ToastError from "../components/toast-error.svelte";
   import MdContentCopy from "svelte-icons/md/MdContentCopy.svelte";
   import FaTrashAlt from "svelte-icons/fa/FaTrashAlt.svelte";
+  import MdFileDownload from "svelte-icons/md/MdFileDownload.svelte";
 
   export let data;
 
@@ -94,6 +95,37 @@
 
     showSuccess("Emails copied to clipboard!", 4000);
   }
+
+  function convertToCSV(hide: string[] = []): string {
+    const headers = Object.keys(data.applications[0])
+      .filter((h) => !hide.includes(h))
+      .toString();
+    const main = data.applications.map((a) => {
+      return Object.entries(a)
+        .filter((e) => !hide.includes(e[0]))
+        .map((e) => e[1])
+        .toString();
+    });
+    return [headers, ...main].join("\n");
+  }
+  function downloadCSV() {
+    const hide = ["cvUrl", "_id"];
+    const csv = convertToCSV(hide);
+
+    // start download
+    const blob = new Blob([csv], { type: "application/csv" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.style.display = "none";
+    a.download = "gdsc-applications-fall-2023";
+    a.href = url;
+    a.click();
+
+    // cleanup
+    a.remove();
+    URL.revokeObjectURL(url);
+  }
 </script>
 
 <svelte:head>
@@ -117,6 +149,15 @@
     Number of applicants: {data.applications.length}
   </h2>
 
+  <button
+    on:click={() => downloadCSV()}
+    class=" self-end p-2 hover:bg-black/[0.05] dark:hover:bg-white/10 flex gap-2 rounded-md transition-all cursor-pointer"
+  >
+    <div class="w-5 text-gray-500">
+      <MdFileDownload />
+    </div>
+    <p class=" text-gray-700 dark:text-gray-300 text-sm">Download as CSV</p>
+  </button>
   <button
     on:click={() => copyEmailsToClipboard()}
     class=" self-end p-2 hover:bg-black/[0.05] dark:hover:bg-white/10 flex gap-2 rounded-md transition-all cursor-pointer"

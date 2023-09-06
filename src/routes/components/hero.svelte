@@ -48,12 +48,13 @@
       </p>
 
       <CTA
+        disabled={true}
         className="w-48 h-12"
         onClick={() => {
           document
             .getElementById("application-form")
             ?.scrollIntoView({ behavior: "smooth" });
-        }}>Apply Now</CTA
+        }}>Applications Closed</CTA
       >
     </div>
   </main>

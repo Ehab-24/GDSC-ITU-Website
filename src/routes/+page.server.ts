@@ -91,6 +91,8 @@ function validateApplication(a: Application): {
 
 export const actions = {
   default: async ({ request }) => {
+    return { success: false };
+
     const data = await request.formData();
 
     const application: Application = {

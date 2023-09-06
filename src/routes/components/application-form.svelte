@@ -162,8 +162,10 @@
       placeholder="Prior experience (if any)"
     />
 
-    <CTA disabled={loading} type="submit" className="w-32 h-10 self-end"
-      >Submit</CTA
+    <CTA
+      disabled={true}
+      type="submit"
+      className=" px-6 whitespace-nowrap h-10 self-end">Applications Closed</CTA
     >
   </form>
 </div>
