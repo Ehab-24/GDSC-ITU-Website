@@ -100,12 +100,16 @@
     const headers = Object.keys(data.applications[0])
       .filter((h) => !hide.includes(h))
       .toString();
+
     const main = data.applications.map((a) => {
       return Object.entries(a)
         .filter((e) => !hide.includes(e[0]))
-        .map((e) => e[1])
+        .map((e) => `"${e[1]}"`)
         .toString();
     });
+
+    console.log(main);
+
     return [headers, ...main].join("\n");
   }
   function downloadCSV() {
