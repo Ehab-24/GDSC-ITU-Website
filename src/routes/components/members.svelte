@@ -83,30 +83,35 @@
   ];
 </script>
 
-<div class=" w-screen flex flex-col md:flex-row gap-8 md:px-32 xl:px-64 px-4">
-  <div class=" w-full mt-4 flex flex-col gap-8">
-    {#each members1 as m (m.id)}
-      <MemberCard member={m} />
-    {/each}
-  </div>
-  <div class=" w-full flex flex-col gap-8">
-    {#each members3 as m (m.id)}
-      <MemberCard member={m} />
-    {/each}
-    <div class="hidden md:block">
-      <div class=" h-full grid place-items-center">
-        <img
-          loading="lazy"
-          src={gdsc_itu}
-          alt="google developer student club - information technology university"
-          class=" w-4/5 self-center"
-        />
+<div class="flex flex-col gap-20">
+  <h2 class="text-slate-700 self-center text-5xl font-black dark:text-gray-200">
+    Meet the Team
+  </h2>
+  <div class=" flex flex-col md:flex-row gap-8 md:px-32 xl:px-64 px-4">
+    <div class=" w-full mt-4 flex flex-col gap-8">
+      {#each members1 as m (m.id)}
+        <MemberCard member={m} />
+      {/each}
+    </div>
+    <div class=" w-full flex flex-col gap-8">
+      {#each members3 as m (m.id)}
+        <MemberCard member={m} />
+      {/each}
+      <div class="hidden md:block">
+        <div class=" h-full grid place-items-center">
+          <img
+            loading="lazy"
+            src={gdsc_itu}
+            alt="google developer student club - information technology university"
+            class=" w-4/5 self-center"
+          />
+        </div>
       </div>
     </div>
-  </div>
-  <div class=" w-full mt-4 flex flex-col gap-8">
-    {#each members2 as m (m.id)}
-      <MemberCard member={m} />
-    {/each}
+    <div class=" w-full mt-4 flex flex-col gap-8">
+      {#each members2 as m (m.id)}
+        <MemberCard member={m} />
+      {/each}
+    </div>
   </div>
 </div>

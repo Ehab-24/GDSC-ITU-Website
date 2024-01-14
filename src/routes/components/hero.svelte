@@ -1,21 +1,19 @@
 <script lang="ts">
   import beams from "../../assets/img/0-beams.webp";
-  import CTA from "./cta.svelte";
+  import CoderushBanner from "./coderush-banner.svelte";
+  import Countdown from "./countdown.svelte";
+  import RegisterNowCta from "./register-now-cta.svelte";
 </script>
 
 <div
-  class=" w-screen min-h-[90vh] md:min-h-[70vh] md:h-[70vh] overflow-x-hidden grid grid-cols-[24] grid-rows-[13] bg-grid"
-  style="mask-image: linear-gradient(to bottom, transparent, black);
-  webkit-mask-image: linear-gradient(to bottom, transparent, black);"
+  class=" w-screen min-h-[90vh] overflow-x-hidden grid grid-cols-[24] grid-rows-[13] bg-grid"
 >
   <!-- background -->
-  <div
-    class=" absolute w-screen min-h-[90vh] md:min-h-[70vh] md:h-[70vh] overflow-hidden"
-  >
+  <div class=" absolute w-screen min-h-[90vh] overflow-hidden">
     <img
       alt="hero background"
       src={beams}
-      class="opacity-30 w-screen min-h-[90vh] md:min-h-[70vh] md:h-[70vh] scale-x-[2] md:scale-x-150 rotate-90 md:rotate-0"
+      class="opacity-20 w-screen min-h-[90vh] scale-x-[2] md:scale-x-150 rotate-90 md:rotate-0"
     />
   </div>
   <div
@@ -24,21 +22,23 @@
 
   <!-- main content -->
   <main
-    class=" absolute mt-10 px-4 md:px-0 md:mt-0 w-screen min-h-[90vh] md:min-h-[70vh] md:h-[70vh] flex flex-col justify-center gap-32 pb-20"
+    class=" absolute pt-10 px-4 md:px-0 w-screen min-h-[90vh] flex flex-col justify-center gap-32 pb-20"
   >
     <div
-      class=" flex flex-col gap-12 w-full md:w-2/3 xl:w-2/5 self-center h-full justify-end md:justify-end items-center"
+      class=" flex flex-col w-full md:w-2/3 xl:w-1/2 self-center h-full justify-end md:justify-end items-center"
     >
       <h1
-        class=" text-6xl md:text-7xl font-bold text-center text-zinc-700 dark:text-white tracking-tight"
+        class="text-6xl relative md:text-7xl font-bold text-center text-zinc-700 dark:text-gray-300 tracking-tight"
       >
-        <span class=" text-blue-700">G</span>oogle
-        <span class=" text-red-600">D</span>eveloper
-        <span class=" text-yellow-500">S</span>tudent
-        <span class=" text-green-700">C</span>lub
+        <span class="text-blue-700">G</span>oogle
+        <span class="text-red-600">D</span>eveloper
+        <br />
+        <span class="text-yellow-500">S</span>tudent
+        <span class="text-green-700">C</span>lub
       </h1>
+
       <p
-        class=" dark:text-[#bababa] text-sm md:text-base text-slate-500 text-center tracking-wide"
+        class=" dark:text-[#bababa] my-12 text-sm md:text-base text-slate-500 text-center tracking-wide"
       >
         Unleash innovation with the exceptional Google Developer Student Club at
         <span class=" font-mono font-bold text-green-500 dark:text-green-400"
@@ -47,15 +47,15 @@
         empowerment.
       </p>
 
-      <CTA
-        disabled={true}
-        className="w-48 h-12"
-        onClick={() => {
-          document
-            .getElementById("application-form")
-            ?.scrollIntoView({ behavior: "smooth" });
-        }}>Applications Closed</CTA
-      >
+      <RegisterNowCta />
+
+      <div class="flex flex-col gap-8 items-center">
+        <Countdown />
+
+        <p class="text-base text-gray-500 dark:text-gray-400">
+          The Deadline is near <span class="font-bold ml-2">8th Feb, 2024</span>
+        </p>
+      </div>
     </div>
   </main>
 </div>

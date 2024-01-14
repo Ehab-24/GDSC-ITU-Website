@@ -20,7 +20,7 @@
     className}
 >
   <h2
-    class=" w-full md:w-2/3 xl:w-2/5 text-5xl font-bold text-center text-zinc-700 dark:text-white tracking-tight"
+    class=" w-full md:w-2/3 xl:w-2/5 text-5xl font-black text-center text-zinc-700 dark:text-white tracking-tight"
   >
     Join us to become better
   </h2>
@@ -41,6 +41,7 @@
   >
     <div class=" w-full grid grid-cols-1 gap-8 md:grid-cols-2">
       <Input
+        disabled={true}
         required
         name="full-name"
         id="full-name"
@@ -56,6 +57,7 @@
         />
       </Input>
       <Input
+        disabled={true}
         required
         name="email"
         id="email"
@@ -72,6 +74,7 @@
         />
       </Input>
       <Input
+        disabled={true}
         required
         name="roll-number"
         id="roll-number"
@@ -87,6 +90,7 @@
         />
       </Input>
       <Input
+        disabled={true}
         required
         name="contact-number"
         id="contact-number"
@@ -104,7 +108,10 @@
       <h2 class=" text-xl font-bold text-gray-500 dark:text-gray-300">
         Department
       </h2>
-      <div class="flex flex-wrap gap-8 justify-center w-full">
+      <fieldset
+        disabled={true}
+        class="flex flex-wrap gap-8 justify-center w-full"
+      >
         <Radio name="department" value="computer-science" id="computer-science"
           >Computer Science</Radio
         >
@@ -138,12 +145,15 @@
           value="artificial-intelligence"
           id="artificial-intelligence">Artificial Intelligence</Radio
         >
-      </div>
+      </fieldset>
     </div>
 
     <div class=" flex flex-col gap-4 items-center w-full">
       <h2 class=" text-xl font-bold text-gray-500 dark:text-gray-300">Team</h2>
-      <fieldset class="flex flex-wrap gap-8 justify-center w-full">
+      <fieldset
+        disabled={true}
+        class="flex flex-wrap gap-8 justify-center w-full"
+      >
         <Radio name="team" value="marketing" id="marketing">Marketing</Radio>
         <Radio name="team" value="event" id="event">Event Management</Radio>
         <Radio name="team" value="design" id="design">Design</Radio>
@@ -151,12 +161,14 @@
     </div>
 
     <Textarea
+      disabled={true}
       name="reason"
       id="reason"
       placeholder="Why do you wish to join GDSC?"
       required
     />
     <Textarea
+      disabled={true}
       name="experience"
       id="experience"
       placeholder="Prior experience (if any)"

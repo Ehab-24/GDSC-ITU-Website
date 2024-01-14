@@ -1,13 +1,16 @@
 <script lang="ts">
+  import type { HTMLInputTypeAttribute } from "svelte/elements";
+
+  export let disabled: boolean = false;
   export let id: string;
   export let name: string;
   export let label: string;
   export let placeholder: string;
-  export let type: string = "text";
+  export let type: HTMLInputTypeAttribute | null | undefined = "text";
   export let required: boolean = false;
 </script>
 
-<div>
+<div class="w-full">
   <label
     for={id}
     class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300"
@@ -21,6 +24,7 @@
     </div>
     <input
       {type}
+      {disabled}
       {id}
       {name}
       {required}

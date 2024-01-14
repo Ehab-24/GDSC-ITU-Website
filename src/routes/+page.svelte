@@ -7,12 +7,21 @@
   import beams from "../assets/img/1-beams.webp";
   import ToastSuccess from "./components/toast-success.svelte";
   import ToastError from "./components/toast-error.svelte";
+  import CoderushPopup from "./components/coderush-popup.svelte";
+  import { onMount } from "svelte";
 
   export let form;
   let success: boolean = false;
   let error: boolean = false;
   let successText: string = "";
   let errorText: string = "";
+  let showPopup: boolean = false;
+
+  onMount(() => {
+    setTimeout(() => {
+      showPopup = true;
+    }, 500);
+  });
 
   function showSuccess(text = "Application Recieved!") {
     success = true;
@@ -82,3 +91,5 @@
     />
   </div>
 </div>
+
+<CoderushPopup bind:showPopup />

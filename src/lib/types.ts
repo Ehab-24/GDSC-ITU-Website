@@ -21,3 +21,5 @@ export type Application = {
   createdAt: Date;
   cvUrl?: string;
 };
+
+export type Competition = "cp" | "web"
