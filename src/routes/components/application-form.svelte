@@ -20,7 +20,7 @@
     className}
 >
   <h2
-    class=" w-full md:w-2/3 xl:w-2/5 text-5xl font-black text-center text-zinc-700 dark:text-white tracking-tight"
+    class=" w-full md:w-2/3 xl:w-2/5 text-4xl md:text-5xl font-black text-center text-zinc-700 dark:text-white tracking-tight"
   >
     Join us to become better
   </h2>

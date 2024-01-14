@@ -9,7 +9,9 @@
 </script>
 
 <div in:fly={{ y: 32 }}>
-  <h3 class="text-xl text-gray-500 dark:text-gray-400 mb-8">
+  <h3
+    class="text-xl text-center md:text-start text-gray-500 dark:text-gray-400 mb-8"
+  >
     Select a competition
   </h3>
 
@@ -18,7 +20,7 @@
       <div class="flex flex-col gap-4 p-4">
         <div class="flex mb-4 items-center gap-2">
           <div
-            class="p-1 w-8 aspect-square rounded-md bg-white/[0.03] text-gray-200"
+            class="p-1 w-8 aspect-square rounded-md bg-black/[0.15] dark:bg-white/[0.03] text-slate-700 dark:text-gray-200"
           >
             <DiCode />
           </div>
@@ -37,7 +39,7 @@
           <p class="text-gray-700 dark:text-gray-200 text-sm">Timeline:</p>
           <div class="flex w-full gap-2">
             <div
-              class="min-h-full scale-y-[0.8] w-px bg-gray-500/50 dark:bg-gray-400/50"
+              class="min-h-full scale-y-[0.8] w-px bg-gray-500/75 dark:bg-gray-400/50"
             />
             <div class="flex items-start flex-col gap-2">
               <div
@@ -76,7 +78,7 @@
       <div class="flex flex-col gap-4 p-4">
         <div class="flex mb-4 items-center gap-2">
           <div
-            class="p-2 w-8 aspect-square rounded-md bg-white/[0.03] text-gray-200"
+            class="p-2 w-8 aspect-square rounded-md bg-black/[0.15] dark:bg-white/[0.03] text-slate-700 dark:text-gray-200"
           >
             <FaGlobe />
           </div>
@@ -93,7 +95,7 @@
           <p class="text-gray-700 dark:text-gray-200 text-sm">Timeline:</p>
           <div class="flex w-full gap-2">
             <div
-              class="min-h-full scale-y-[0.8] w-px bg-gray-500/50 dark:bg-gray-400/50"
+              class="min-h-full scale-y-[0.8] w-px bg-gray-500/75 dark:bg-gray-400/50"
             />
             <div class="flex items-start flex-col gap-2">
               <div

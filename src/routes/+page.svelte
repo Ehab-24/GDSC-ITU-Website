@@ -62,7 +62,7 @@
   <ToastError text={errorText} />
 {/if}
 
-<div class=" w-screen flex flex-col gap-40 overflow-x-hidden">
+<div class=" w-screen flex flex-col gap-24 md:gap-40 overflow-x-hidden">
   <Hero />
   <Members />
   <div
@@ -82,7 +82,7 @@
     <ApplicationForm className="z-50" />
     <div class=" h-12" />
   </div>
-  <div class=" w-full pb-20 grid place-items-center">
+  <div class=" w-full px-4 md:px-0 pb-20 grid place-items-center">
     <img
       loading="lazy"
       class=" w-full max-w-[420px] shadow-2xl shadow-black/20 dark:shadow-green-200/10"

@@ -17,7 +17,7 @@
 
 <section
   in:fly={{ duration: 200, y: 32 }}
-  class="flex flex-col gap-2 items-start w-full max-w-xl"
+  class="flex mb-8 flex-col gap-2 items-start w-full max-w-xl"
 >
   <p class="text-slate-700 dark:text-gray-200 text-sm">
     Members:
@@ -47,7 +47,10 @@
         label={`Member ${index + 1} Name`}
         placeholder={`Member ${index + 1} Name`}
       >
-        <div slot="icon" class="w-5 aspect-square text-gray-400">
+        <div
+          slot="icon"
+          class="w-5 aspect-square text-gray-500 dark:text-gray-400"
+        >
           <MdPerson />
         </div>
       </Input>
@@ -59,7 +62,10 @@
         label={`Member ${index + 1} Email`}
         placeholder={`Member ${index + 1} Email`}
       >
-        <div slot="icon" class="w-5 aspect-square text-gray-400">
+        <div
+          slot="icon"
+          class="w-5 aspect-square text-gray-500 dark:text-gray-400"
+        >
           <MdEmail />
         </div>
       </Input>
@@ -72,7 +78,10 @@
           label={`Member ${index + 1} CNIC`}
           placeholder="0000000000000"
         >
-          <div slot="icon" class="w-5 aspect-square text-gray-400">
+          <div
+            slot="icon"
+            class="w-5 aspect-square text-gray-500 dark:text-gray-400"
+          >
             <MdPermIdentity />
           </div>
         </Input>
@@ -83,7 +92,10 @@
           label={`Member ${index + 1} Phone`}
           placeholder="03000000000"
         >
-          <div slot="icon" class="w-5 aspect-square text-gray-400">
+          <div
+            slot="icon"
+            class="w-5 aspect-square text-gray-500 dark:text-gray-400"
+          >
             <MdPhone />
           </div>
         </Input>

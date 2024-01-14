@@ -28,11 +28,11 @@
 </script>
 
 <div
-  class="flex text-5xl font-black text-slate-700 dark:text-gray-200 mt-12 gap-8"
+  class="flex text-4xl md:text-5xl font-black text-slate-700 dark:text-gray-200 gap-4 md:gap-8"
 >
-  <p class="w-24 h-12 text-center">{hours}</p>
+  <p class="w-16 h-10 text-center">{hours}</p>
   :
-  <p class="w-24 h-12 text-center">{minutes}</p>
+  <p class="w-16 h-10 text-center">{minutes}</p>
   :
-  <p class="w-24 h-12 text-center">{seconds}</p>
+  <p class="w-16 h-10 text-center">{seconds}</p>
 </div>

@@ -35,12 +35,22 @@ input[type="number"] {
 
 .neon-text {
   font-family: 'Arial', sans-serif;
-  text-shadow: 0 0 3px #0ff, 0 0 4px #0ff;
+  text-shadow: 0 0 3px #b91c1c, 0 0 4px #b91c1c;
   animation: neonGlow 1.5s ease-in-out infinite alternate;
 }
+.neon-text-dark {
+  font-family: 'Arial', sans-serif;
+  text-shadow: 0 0 3px #0ff, 0 0 4px #0ff;
+  animation: neonGlowDark 1.5s ease-in-out infinite alternate;
+}
 
-@keyframes neonGlow {
+@keyframes neonGlow{
   to {
-    text-shadow: 0 0 1px #fff, 0 0 2px #fff;
+    text-shadow: 0 0 1px #ef4444, 0 0 2px #ef4444;
+  }
+}
+@keyframes neonGlowDark {
+  to {
+    text-shadow: 0 0 1px #ef4444, 0 0 2px #ef4444;
   }
 }

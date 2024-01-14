@@ -42,17 +42,19 @@
       >
         Unleash innovation with the exceptional Google Developer Student Club at
         <span class=" font-mono font-bold text-green-500 dark:text-green-400"
-          >Information Technology University</span
+          ><a href="https://itu.edu.pk/">Information Technology University</a
+          ></span
         >. Join our expert core team on a journey of tech exploration and
         empowerment.
       </p>
 
       <RegisterNowCta />
 
-      <div class="flex flex-col gap-8 items-center">
+      <div
+        class="flex mt-12 gap-2 md:gap-4 flex-col-reverse md:flex-col items-center"
+      >
         <Countdown />
-
-        <p class="text-base text-gray-500 dark:text-gray-400">
+        <p class="text-sm md:text-base text-gray-500 dark:text-gray-400">
           The Deadline is near <span class="font-bold ml-2">8th Feb, 2024</span>
         </p>
       </div>

@@ -83,8 +83,10 @@
   ];
 </script>
 
-<div class="flex flex-col gap-20">
-  <h2 class="text-slate-700 self-center text-5xl font-black dark:text-gray-200">
+<div class="flex flex-col gap-12 md:gap-20">
+  <h2
+    class="text-slate-700 self-center text-center text-4xl md:text-5xl font-black dark:text-gray-200"
+  >
     Meet the Team
   </h2>
   <div class=" flex flex-col md:flex-row gap-8 md:px-32 xl:px-64 px-4">

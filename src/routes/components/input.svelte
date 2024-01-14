@@ -28,7 +28,7 @@
       {id}
       {name}
       {required}
-      class=" border border-gray-300 dark:border-gray-700 text-gray-700 text-sm rounded-lg ring-0 focus:border-green-600 block w-full pl-10 p-2.5 bg-black/[0.03] dark:bg-white/[0.03] dark:placeholder-gray-400 dark:text-gray-300 outline-0 transition-all"
+      class=" border border-gray-400 dark:border-gray-700 text-gray-700 text-sm rounded-lg ring-0 focus:border-green-600 block w-full pl-10 p-2.5 bg-black/[0.03] dark:bg-white/[0.03] dark:placeholder-gray-400 dark:text-gray-300 outline-0 transition-all"
       {placeholder}
     />
   </div>

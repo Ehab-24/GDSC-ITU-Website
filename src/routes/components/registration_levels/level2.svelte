@@ -14,7 +14,7 @@
 
 <section
   in:fly={{ duration: 200, y: 32 }}
-  class="flex flex-col gap-2 items-start w-full max-w-xl"
+  class="flex mb-8 flex-col gap-2 items-start w-full max-w-xl"
 >
   <p class="text-slate-700 dark:text-gray-200 text-sm">
     Registration charges:
@@ -37,7 +37,10 @@
       label="Team Name"
       placeholder="Team Name"
     >
-      <div slot="icon" class="w-5 aspect-square text-gray-400">
+      <div
+        slot="icon"
+        class="w-5 aspect-square text-gray-500 dark:text-gray-400"
+      >
         <MdGroup />
       </div>
     </Input>
@@ -49,7 +52,10 @@
       label="Institute"
       placeholder="Institute"
     >
-      <div slot="icon" class="w-5 aspect-square text-gray-400">
+      <div
+        slot="icon"
+        class="w-5 aspect-square text-gray-500 dark:text-gray-400"
+      >
         <FaBuilding />
       </div>
     </Input>
@@ -61,7 +67,10 @@
       label="Ambassador/Discount Code"
       placeholder="CRXXXX"
     >
-      <div slot="icon" class="w-5 aspect-square text-gray-400">
+      <div
+        slot="icon"
+        class="w-5 aspect-square text-gray-500 dark:text-gray-400"
+      >
         <MdDiscFull />
       </div>
     </Input>

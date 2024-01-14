@@ -21,18 +21,24 @@
 </script>
 
 <main class="flex flex-col px-4 md:px-40 py-20 xl:px-80 items-center">
-  <DottedBgText>Coderush'24 Registration</DottedBgText>
+  <DottedBgText>
+    <p class="leading-relaxed dark:text-gray-200 text-slate-700">
+      Coderush'24<br />Registration
+    </p>
+  </DottedBgText>
 
-  <p class="text-sm text-center text-gray-400 leading-loose px-8 md:px-0">
+  <p
+    class="text-sm text-center text-gray-500 dark:text-gray-400 leading-loose px-4 md:px-0"
+  >
     For detailed information of competitions, please visit the Competitions
     page. For any kind of issues or help, please contact us at web@softec.org.pk
   </p>
 
-  <div class="flex justify-between mb-20 w-full max-w-3xl mt-12">
+  <div class="flex justify-between mb-20 w-full max-w-3xl mt-12 px-4 md:px-0">
     <LevelIndicator isSelected={currentLevel === 1} />
-    <div class="h-px w-[45%] text-gray-500/50 dark:bg-gray-400/50" />
+    <div class="h-px w-[45%] bg-gray-500/50 dark:bg-gray-400/50" />
     <LevelIndicator isSelected={currentLevel === 2} />
-    <div class="h-px w-[45%] text-gray-500/50 dark:bg-gray-400/50" />
+    <div class="h-px w-[45%] bg-gray-500/50 dark:bg-gray-400/50" />
     <LevelIndicator isSelected={currentLevel === 3} />
   </div>
 
