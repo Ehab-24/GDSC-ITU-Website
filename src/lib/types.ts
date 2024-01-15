@@ -27,12 +27,12 @@ export type Application = {
 const RegistrationSchema = z.object({
   teamName: z.string().min(3, "Team name must be atleast 3 characters long.").max(50, "Team name must be atmost 50 characters long."),
   institute: z.string().min(3, "Institute name must be atleast 3 characters long.").max(50, "Institute name must be atmost 50 characters long."),
-  ambassadorCode: z.string().min(6, "Ambassador code must be 6 characters long").max(6, "Ambassador code must be 6 characters long").optional(),
+  ambassadorCode: z.string().optional(),
   nMembers: z.number().min(1, "Number of members must be atleast 1").max(3, "Number of members can be atmost 3"),
   competition: z.enum(["cp", "web"]),
   teamMembers: z.array(z.object({
     name: z.string().min(3).max(50),
-    cnic: z.string().min(13, "CNIC must be 13 characters long." ).max(13,"CNIC must be 13 characters long." ),
+    cnic: z.string().min(13, "CNIC must be 13 characters long.").max(13, "CNIC must be 13 characters long."),
     email: z.string().email("Invalid email address."),
     phone: z.string().min(11, "Phone number must be 11 characters long.").max(11, "Phone number must be 11 characters long."),
   })),
@@ -41,7 +41,7 @@ const RegistrationSchema = z.object({
 const TeamSchema = z.object({
   teamName: z.string().min(3, "Team name must be atleast 3 characters long.").max(50, "Team name must be atmost 50 characters long."),
   institute: z.string().min(3, "Institute name must be atleast 3 characters long.").max(50, "Institute name must be atmost 50 characters long."),
-  ambassadorCode: z.string().min(6, "Ambassador code must be 6 characters long").max(6, "Ambassador code must be 6 characters long").optional(),
+  ambassadorCode: z.string().optional(),
   nMembers: z.number().min(1, "Number of members must be atleast 1").max(3, "Number of members can be atmost 3"),
 })
 
