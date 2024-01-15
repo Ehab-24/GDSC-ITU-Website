@@ -24,9 +24,12 @@
 	"type": "module",
 	"dependencies": {
 		"@google-cloud/local-auth": "2.1.0",
+		"axios": "^1.6.5",
 		"google-auth-library": "^9.0.0",
 		"googleapis": "105",
 		"mongodb": "^5.8.0",
-		"svelte-icons": "^2.1.0"
+		"svelte-icons": "^2.1.0",
+		"svelte-toasts": "^1.1.2",
+		"zod": "^3.22.4"
 	}
 }

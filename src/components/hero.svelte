@@ -1,6 +1,5 @@
 <script lang="ts">
-  import beams from "../../assets/img/0-beams.webp";
-  import CoderushBanner from "./coderush-banner.svelte";
+  import beams from "../assets/img/0-beams.webp";
   import Countdown from "./countdown.svelte";
   import RegisterNowCta from "./register-now-cta.svelte";
 </script>

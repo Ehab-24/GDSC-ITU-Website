@@ -1,8 +1,8 @@
 <script lang="ts">
   import { quadInOut } from "svelte/easing";
   import { fly } from "svelte/transition";
-  import CelebrationStar from "../../assets/icons/celebration-star.svg";
-  import qr_code from "../../assets/img/qr_code.png";
+  import CelebrationStar from "../assets/icons/celebration-star.svg";
+  import qr_code from "../assets/img/qr_code.png";
   import FaInstagram from "svelte-icons/fa/FaInstagram.svelte";
   import MdClose from "svelte-icons/md/MdClose.svelte";
   import RegisterNowCta from "./register-now-cta.svelte";

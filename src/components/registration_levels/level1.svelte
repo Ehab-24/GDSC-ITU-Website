@@ -2,10 +2,10 @@
   import CompetitionCard from "../competition-card.svelte";
   import DiCode from "svelte-icons/di/DiCode.svelte";
   import FaGlobe from "svelte-icons/fa/FaGlobe.svelte";
-  import type { Competition } from "$lib/types";
+  import type { CompetitionType } from "$lib/types";
   import { fly } from "svelte/transition";
 
-  export let onSelect: (competition: Competition) => void;
+  export let onSelect: (competition: CompetitionType) => void;
 </script>
 
 <div in:fly={{ y: 32 }}>
@@ -20,7 +20,7 @@
       <div class="flex flex-col gap-4 p-4">
         <div class="flex mb-4 items-center gap-2">
           <div
-            class="p-1 w-8 aspect-square rounded-md bg-black/[0.15] dark:bg-white/[0.03] text-slate-700 dark:text-gray-200"
+            class="p-1 w-8 aspect-square rounded-md border-gray-500 border dark:border-none dark:bg-white/[0.03] text-slate-700 dark:text-gray-200"
           >
             <DiCode />
           </div>
@@ -78,7 +78,7 @@
       <div class="flex flex-col gap-4 p-4">
         <div class="flex mb-4 items-center gap-2">
           <div
-            class="p-2 w-8 aspect-square rounded-md bg-black/[0.15] dark:bg-white/[0.03] text-slate-700 dark:text-gray-200"
+            class="p-2 w-8 aspect-square rounded-md border-gray-500 border dark:border-none dark:bg-white/[0.03] text-slate-700 dark:text-gray-200"
           >
             <FaGlobe />
           </div>

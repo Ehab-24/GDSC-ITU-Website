@@ -1,6 +1,6 @@
 <script lang="ts">
-  import ToastSuccess from "../components/toast-success.svelte";
-  import ToastError from "../components/toast-error.svelte";
+  import ToastSuccess from "../../components/toast-success.svelte";
+  import ToastError from "../../components/toast-error.svelte";
   import MdContentCopy from "svelte-icons/md/MdContentCopy.svelte";
   import FaTrashAlt from "svelte-icons/fa/FaTrashAlt.svelte";
   import MdFileDownload from "svelte-icons/md/MdFileDownload.svelte";
@@ -217,7 +217,7 @@
             <td class="px-6 py-4">{a.department}</td>
             <td
               class={`px-6 py-4 capitalize ${getStatusTextColor(
-                a.status || "pending"
+                a.status || "pending",
               )}`}>{a.status || "pending"}</td
             >
             <td class="px-6 py-4 text-right">

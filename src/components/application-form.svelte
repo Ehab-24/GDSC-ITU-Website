@@ -1,8 +1,8 @@
 <script lang="ts">
   import Input from "./input.svelte";
 
-  import email from "../../assets/icons/email.svg";
-  import user from "../../assets/icons/user.svg";
+  import email from "../assets/icons/email.svg";
+  import user from "../assets/icons/user.svg";
   import FaPhone from "svelte-icons/fa/FaPhone.svelte";
   import Radio from "./radio.svelte";
   import Textarea from "./textarea.svelte";

@@ -1,15 +1,15 @@
 <script lang="ts">
   import type { Member } from "$lib/types";
   import MemberCard from "./member-card.svelte";
-  import gdsc_itu from "../../assets/img/gdsc-itu.webp";
-  import aminYayha from "../../assets/img/amin-yahya.jpg";
-  import affanWaseem from "../../assets/img/affan-waseem.webp";
-  import zainFaraz from "../../assets/img/zain-faraz.webp";
-  import zainRazzaq from "../../assets/img/zain-razzaq.webp";
-  import rajaUzair from "../../assets/img/raja-uzair.webp";
-  import saadAhmad from "../../assets/img/saad-ahmad.webp";
-  import muzamilAli from "../../assets/img/muzamil-ali.webp";
-  import me from "../../assets/img/ehab-sohail.webp";
+  import gdsc_itu from "../assets/img/gdsc-itu.webp";
+  import aminYayha from "../assets/img/amin-yahya.jpg";
+  import affanWaseem from "../assets/img/affan-waseem.webp";
+  import zainFaraz from "../assets/img/zain-faraz.webp";
+  import zainRazzaq from "../assets/img/zain-razzaq.webp";
+  import rajaUzair from "../assets/img/raja-uzair.webp";
+  import saadAhmad from "../assets/img/saad-ahmad.webp";
+  import muzamilAli from "../assets/img/muzamil-ali.webp";
+  import me from "../assets/img/ehab-sohail.webp";
 
   const members1: Member[] = [
     {

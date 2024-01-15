@@ -1,29 +1,47 @@
 <script lang="ts">
-  import type { HTMLInputTypeAttribute } from "svelte/elements";
+  import type {
+    ChangeEventHandler,
+    KeyboardEventHandler,
+  } from "svelte/elements";
+  import FaStarOfLife from "svelte-icons/fa/FaStarOfLife.svelte";
 
+  export let value: string | number | undefined;
   export let disabled: boolean = false;
   export let id: string;
   export let name: string;
   export let label: string;
   export let placeholder: string;
-  export let type: HTMLInputTypeAttribute | null | undefined = "text";
   export let required: boolean = false;
+  export let onChange: ChangeEventHandler<HTMLInputElement> | undefined | null =
+    undefined;
+  export let onKeyDown:
+    | KeyboardEventHandler<HTMLInputElement>
+    | undefined
+    | null = undefined;
 </script>
 
 <div class="w-full">
   <label
     for={id}
-    class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300"
-    >{label}</label
-  >
+    class="flex items-center gap-1 mb-2 text-sm font-medium text-gray-700 dark:text-gray-300"
+    >{label}
+    {#if required}
+      <div class="w-2 font-normal text-red-500 dark:text-sky-400 aspect-square">
+        <FaStarOfLife />
+      </div>
+    {/if}
+  </label>
   <div class="relative mb-6">
     <div
       class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
     >
       <slot name="icon" />
     </div>
+
     <input
-      {type}
+      on:change={onChange}
+      on:keydown={onKeyDown}
+      bind:value
       {disabled}
       {id}
       {name}

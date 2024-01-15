@@ -1,13 +1,13 @@
 <script lang="ts">
-  import ApplicationForm from "./components/application-form.svelte";
-  import Hero from "./components/hero.svelte";
-  import Members from "./components/members.svelte";
+  import ApplicationForm from "../components/application-form.svelte";
+  import Hero from "../components/hero.svelte";
+  import Members from "../components/members.svelte";
 
   import qr_code from "../assets/img/qr_code.png";
   import beams from "../assets/img/1-beams.webp";
-  import ToastSuccess from "./components/toast-success.svelte";
-  import ToastError from "./components/toast-error.svelte";
-  import CoderushPopup from "./components/coderush-popup.svelte";
+  import ToastSuccess from "../components/toast-success.svelte";
+  import ToastError from "../components/toast-error.svelte";
+  import CoderushPopup from "../components/coderush-popup.svelte";
   import { onMount } from "svelte";
 
   export let form;
