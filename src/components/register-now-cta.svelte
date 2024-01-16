@@ -31,13 +31,13 @@
     />
   </svg>
   <a
-    href="/coderush/registration"
+    href="https://coderush24.vercel.app/registration"
     class="text-3xl neon-text dark:hidden tracking-tight text-white absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 whitespace-nowrap font-normal shadow-white"
   >
     REGISTER NOW!!
   </a>
   <a
-    href="/coderush/registration"
+    href="https://coderush24.vercel.app/registration"
     class="text-3xl neon-text-dark hidden dark:block tracking-tight text-white absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 whitespace-nowrap font-normal shadow-white"
   >
     REGISTER NOW!!

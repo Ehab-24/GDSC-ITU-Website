@@ -40,7 +40,7 @@
       >
 
       <p
-        class="text-center mb-12 md:mx-16 text-gray-700 dark:text-gray-300 text-sm"
+        class="text-center my-12 md:mx-16 text-gray-700 dark:text-gray-300 text-sm"
       >
         We are looking for passionate students who want to learn and grow with
         us. If you are interested in joining GDSC ITU, please fill out the form
