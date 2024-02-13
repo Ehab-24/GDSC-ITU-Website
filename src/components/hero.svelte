@@ -54,7 +54,7 @@
       >
         <Countdown />
         <p class="text-sm md:text-base text-gray-500 dark:text-gray-400">
-          The Deadline is near <span class="font-bold ml-2">8th Feb, 2024</span>
+          The Deadline is near <span class="font-bold ml-2">28th Feb, 2024</span>
         </p>
       </div>
     </div>

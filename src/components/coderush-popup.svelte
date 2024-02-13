@@ -69,7 +69,7 @@
             Registration deadline:
           </h3>
           <p class="text-gray-500 dark:text-gray-400">
-            Thursday, 8 February 2024
+            Wednesday, 28th Feburary 2024
           </p>
         </div>
       </div>
