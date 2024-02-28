@@ -1,7 +1,6 @@
 <script lang="ts">
   import { onDestroy, onMount } from "svelte";
-
-  const deadline = new Date("2024-02-28T23:59:59");
+  import { registrationDeadline } from "$lib/data";
 
   let interval: any;
   let days = 0;
@@ -11,7 +10,7 @@
 
   function updateCountdown() {
     const currentDate = new Date();
-    const diff = deadline.getTime() - currentDate.getTime();
+    const diff = registrationDeadline.getTime() - currentDate.getTime();
 
     days = Math.floor(diff / (1000 * 60 * 60 * 24));
     hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
@@ -29,7 +28,7 @@
   });
 </script>
 
-{#if deadline > new Date()}
+{#if registrationDeadline > new Date()}
   <div
     class="flex flex-wrap justify-center text-4xl md:text-6xl font-black text-slate-700 dark:text-gray-200 gap-4 md:gap-8"
   >

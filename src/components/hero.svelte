@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { registrationDeadline } from "$lib/data";
   import beams from "../assets/img/0-beams.webp";
   import Countdown from "./countdown.svelte";
   import RegisterNowCta from "./register-now-cta.svelte";
@@ -47,15 +48,21 @@
         empowerment.
       </p>
 
-      <RegisterNowCta />
+      {#if registrationDeadline > new Date()}
+        <RegisterNowCta />
+      {/if}
 
       <div
         class="flex mt-12 gap-2 md:gap-4 flex-col-reverse md:flex-col items-center"
       >
         <Countdown />
-        <p class="text-sm md:text-base text-gray-500 dark:text-gray-400">
-          The Deadline is near <span class="font-bold ml-2">28th Feb, 2024</span>
-        </p>
+        {#if registrationDeadline > new Date()}
+          <p class="text-sm md:text-base text-gray-500 dark:text-gray-400">
+            The Deadline is near <span class="font-bold ml-2"
+              >28th Feb, 2024</span
+            >
+          </p>
+        {/if}
       </div>
     </div>
   </main>

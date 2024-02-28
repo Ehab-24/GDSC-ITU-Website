@@ -9,6 +9,7 @@
   import ToastError from "../components/toast-error.svelte";
   import CoderushPopup from "../components/coderush-popup.svelte";
   import { onMount } from "svelte";
+  import { registrationDeadline } from "$lib/data";
 
   export let form;
   let success: boolean = false;
@@ -19,7 +20,9 @@
 
   onMount(() => {
     setTimeout(() => {
-      showPopup = true;
+      if (registrationDeadline > new Date()) {
+        showPopup = true;
+      }
     }, 500);
   });
 
