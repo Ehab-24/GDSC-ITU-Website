@@ -10,6 +10,7 @@
   import { enhance } from "$app/forms";
 
   export let className: string = "";
+  export let disabled: boolean;
 
   let loading = false;
 </script>
@@ -30,18 +31,15 @@
     method="POST"
     use:enhance={() => {
       loading = true;
-      console.log(loading);
-
       return async ({ update }) => {
         await update();
         loading = false;
-        console.log(loading);
       };
     }}
   >
     <div class=" w-full grid grid-cols-1 gap-8 md:grid-cols-2">
       <Input
-        disabled={true}
+        disabled={disabled}
         required
         name="full-name"
         id="full-name"
@@ -57,7 +55,7 @@
         />
       </Input>
       <Input
-        disabled={true}
+        disabled={disabled}
         required
         name="email"
         id="email"
@@ -74,7 +72,7 @@
         />
       </Input>
       <Input
-        disabled={true}
+        disabled={disabled}
         required
         name="roll-number"
         id="roll-number"
@@ -90,7 +88,7 @@
         />
       </Input>
       <Input
-        disabled={true}
+        disabled={disabled}
         required
         name="contact-number"
         id="contact-number"
@@ -109,7 +107,7 @@
         Department
       </h2>
       <fieldset
-        disabled={true}
+        disabled={disabled}
         class="flex flex-wrap gap-8 justify-center w-full"
       >
         <Radio name="department" value="computer-science" id="computer-science"
@@ -151,7 +149,7 @@
     <div class=" flex flex-col gap-4 items-center w-full">
       <h2 class=" text-xl font-bold text-gray-500 dark:text-gray-300">Team</h2>
       <fieldset
-        disabled={true}
+        disabled={disabled}
         class="flex flex-wrap gap-8 justify-center w-full"
       >
         <Radio name="team" value="marketing" id="marketing">Marketing</Radio>
@@ -161,23 +159,23 @@
     </div>
 
     <Textarea
-      disabled={true}
+      disabled={disabled}
       name="reason"
       id="reason"
       placeholder="Why do you wish to join GDSC?"
       required
     />
     <Textarea
-      disabled={true}
+      disabled={disabled}
       name="experience"
       id="experience"
       placeholder="Prior experience (if any)"
     />
 
     <CTA
-      disabled={true}
+      disabled={disabled}
       type="submit"
-      className=" px-6 whitespace-nowrap h-10 self-end">Applications Closed</CTA
+      className=" px-6 whitespace-nowrap h-10 self-end">Submit</CTA
     >
   </form>
 </div>

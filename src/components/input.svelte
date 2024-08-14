@@ -26,7 +26,7 @@
     class="flex items-center gap-1 mb-2 text-sm font-medium text-gray-700 dark:text-gray-300"
     >{label}
     {#if required}
-      <div class="w-2 font-normal text-red-500 dark:text-sky-400 aspect-square">
+      <div class="w-2 font-normal text-green-500 dark:text-green-400 aspect-square">
         <FaStarOfLife />
       </div>
     {/if}
