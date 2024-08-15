@@ -30,10 +30,7 @@ function validateStudentId(id: string): boolean {
 
     id = id.substring(id.length - 5);
     const batchNumber = parseInt(id);
-    if (batchNumber > 23999 || batchNumber < 20000) {
-        return false;
-    }
-    return true;
+    return batchNumber >= 20000 && batchNumber <= 24999
 }
 
 function validateStudentEmail(email: string): {
