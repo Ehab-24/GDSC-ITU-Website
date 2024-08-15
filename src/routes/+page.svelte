@@ -69,7 +69,7 @@
 <div class=" w-screen flex flex-col overflow-x-hidden">
     <Hero />
     <!-- <Members /> -->
-    <Events classname="py-12 md:py-20" />
+    <Events classname="py-20" />
     <div class=" h-max relative overflow-hidden">
         <div
             class=" w-full pointer-events-none dark:opacity-50 h-full absolute grid grid-cols-[24] grid-rows-[13] bg-grid"

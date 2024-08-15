@@ -54,6 +54,6 @@
   </div>
 {:else}
   <p class="text-2xl md:text-5xl text-center text-slate-700 dark:text-gray-200 font-bold">
-    The Larget Tech Society in ITU
+    The Larget Tech Society in ITU!
   </p>
 {/if}

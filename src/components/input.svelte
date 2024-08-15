@@ -20,7 +20,7 @@
     | null = undefined;
 </script>
 
-<div class="w-full">
+<div class="w-full max-w-sm">
   <label
     for={id}
     class="flex items-center gap-1 mb-2 text-sm font-medium text-gray-700 dark:text-gray-300"

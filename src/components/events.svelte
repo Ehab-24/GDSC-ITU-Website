@@ -1,15 +1,24 @@
 <script lang="ts">
-    import CodeRush24PriceDistribution_1 from "../assets/img/IMG_7453.webp";
-    import CodeRush24PriceDistribution_2 from "../assets/img/IMG_7445.webp";
-    import CodeRush24PriceDistribution_3 from "../assets/img/IMG_7456.webp";
-    import CodeRush24PriceDistribution_4 from "../assets/img/IMG_7491.webp";
-    import CodeRush24PriceDistribution_5 from "../assets/img/IMG_7493.webp";
+
+    import CodeRush24PrizeDistribution_1 from "../assets/img/IMG-20240815-WA0002.webp"
+    import CodeRush24PrizeDistribution_2 from "../assets/img/IMG-20240815-WA0004.webp"
+    import CodeRush24PrizeDistribution_3 from "../assets/img/IMG-20240815-WA0006.webp"
+    import CodeRush24PrizeDistribution_4 from "../assets/img/IMG-20240815-WA0008.webp"
+    import CodeRush24PrizeDistribution_5 from "../assets/img/IMG-20240815-WA0010.webp"
+    import CodeRush24PrizeDistribution_6 from "../assets/img/IMG-20240815-WA0012.webp"
+    import CodeRush24PrizeDistribution_7 from "../assets/img/IMG-20240815-WA0013.webp"
+    import CodeRush24PrizeDistribution_8 from "../assets/img/IMG-20240815-WA0015.webp"
 
     import CodeRush24_1 from "../assets/img/IMG_7422.webp";
     import CodeRush24_2 from "../assets/img/IMG_7428.webp";
     import CodeRush24_3 from "../assets/img/IMG_7437.webp";
     import CodeRush24_4 from "../assets/img/IMG_7430.webp";
     import CodeRush24_5 from "../assets/img/RRC09498.webp";
+    import CodeRush24_6 from "../assets/img/IMG_7453.webp";
+    import CodeRush24_7 from "../assets/img/IMG_7445.webp";
+    import CodeRush24_8 from "../assets/img/IMG_7456.webp";
+    import CodeRush24_9 from "../assets/img/IMG_7491.webp";
+    import CodeRush24_10 from "../assets/img/IMG_7493.webp";
 
     import GdscCore24_1 from "../assets/img/IMG_0442.webp";
     import GdscCore24_2 from "../assets/img/RRC09955.webp";
@@ -43,6 +52,11 @@
             CodeRush24_3,
             CodeRush24_4,
             CodeRush24_5,
+            CodeRush24_6,
+            CodeRush24_7,
+            CodeRush24_8,
+            CodeRush24_9,
+            CodeRush24_10,
         ],
     };
     const codeRush22 = {
@@ -79,16 +93,19 @@
         title: "Prize Distribution Ceremony’24",
         description: "At the end of the tenure, the whole team had a farewell dinner arranged by GDSC. Certificates and shields were distributed among the team members.",
         images: [
-            CodeRush24PriceDistribution_1,
-            CodeRush24PriceDistribution_2,
-            CodeRush24PriceDistribution_3,
-            CodeRush24PriceDistribution_4,
-            CodeRush24PriceDistribution_5,
+            CodeRush24PrizeDistribution_1,
+            CodeRush24PrizeDistribution_2,
+            CodeRush24PrizeDistribution_3,
+            CodeRush24PrizeDistribution_4,
+            CodeRush24PrizeDistribution_5,
+            CodeRush24PrizeDistribution_6,
+            CodeRush24PrizeDistribution_7,
+            CodeRush24PrizeDistribution_8,
         ],
     };
 </script>
 
-<div class={`w-full h-max flex flex-col gap-4 md:gap-8 xl:gap-12 ${classname}`}>
+<div class={`w-full h-max flex flex-col gap-32 md:gap-8 xl:gap-12 ${classname}`}>
     <ImagesPreviewer
         images={codeRush22.images}
         title={codeRush22.title}

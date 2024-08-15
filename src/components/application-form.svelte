@@ -37,7 +37,7 @@
       };
     }}
   >
-    <div class=" w-full grid grid-cols-1 gap-8 md:grid-cols-2">
+    <div class=" w-full flex flex-wrap justify-center gap-4 md:gap-8">
       <Input
         disabled={disabled}
         required
@@ -54,23 +54,23 @@
           slot="icon"
         />
       </Input>
-      <Input
-        disabled={disabled}
-        required
-        name="email"
-        id="email"
-        type="email"
-        label="Your Email"
-        placeholder="rollno@itu.edu.pk"
-      >
-        <img
-          loading="lazy"
-          src={email}
-          alt="email icon"
-          class=" w-5"
-          slot="icon"
-        />
-      </Input>
+      <!-- <Input -->
+      <!--   disabled={disabled} -->
+      <!--   required -->
+      <!--   name="email" -->
+      <!--   id="email" -->
+      <!--   type="email" -->
+      <!--   label="Your Email" -->
+      <!--   placeholder="rollno@itu.edu.pk" -->
+      <!-- > -->
+      <!--   <img -->
+      <!--     loading="lazy" -->
+      <!--     src={email} -->
+      <!--     alt="email icon" -->
+      <!--     class=" w-5" -->
+      <!--     slot="icon" -->
+      <!--   /> -->
+      <!-- </Input> -->
       <Input
         disabled={disabled}
         required
@@ -108,7 +108,7 @@
       </h2>
       <fieldset
         disabled={disabled}
-        class="flex flex-wrap gap-8 justify-center w-full"
+        class="flex flex-wrap gap-4 md:gap-8 justify-start md:justify-center w-full"
       >
         <Radio name="department" value="computer-science" id="computer-science"
           >Computer Science</Radio
@@ -150,7 +150,7 @@
       <h2 class=" text-xl font-bold text-gray-500 dark:text-gray-300">Team</h2>
       <fieldset
         disabled={disabled}
-        class="flex flex-wrap gap-8 justify-center w-full"
+        class="flex flex-wrap gap-4 md:gap-8 justify-start md:justify-center w-full"
       >
         <Radio name="team" value="marketing" id="marketing">Marketing</Radio>
         <Radio name="team" value="event" id="event">Event Management</Radio>
