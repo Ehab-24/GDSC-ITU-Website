@@ -107,15 +107,15 @@
 
 <div class={`w-full h-max flex flex-col gap-32 md:gap-8 xl:gap-12 ${classname}`}>
     <ImagesPreviewer
-        images={codeRush22.images}
-        title={codeRush22.title}
-        description={codeRush22.description}
-    />
-    <ImagesPreviewer
         reverse
         images={codeRush24.images}
         title={codeRush24.title}
         description={codeRush24.description}
+    />
+    <ImagesPreviewer
+        images={codeRush22.images}
+        title={codeRush22.title}
+        description={codeRush22.description}
     />
     <ImagesPreviewer
         images={arbisoftMockInterview.images}
