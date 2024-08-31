@@ -81,7 +81,7 @@
             src={beams}
             alt="beams"
         />
-        <ApplicationForm className="z-50" disabled={false} />
+        <ApplicationForm className="z-50" disabled={true} />
         <div class=" h-12" />
     </div>
     <div class=" w-full px-4 md:px-0 pb-20 grid place-items-center">
