@@ -24,7 +24,7 @@
 
         <div class="flex flex-col gap-12 md:flex-row w-full">
             <p class="w-full text-sm dark:text-gray-400">
-                © 2024 GDSC ITU.<br />All rights reserved
+                © 2024 GDG on Campus ITU.<br />All rights reserved
             </p>
 
             <div class="w-full gap-12 flex-col md:flex-row flex">

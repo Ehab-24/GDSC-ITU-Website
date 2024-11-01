@@ -1,31 +1,19 @@
 <script lang="ts">
     import ApplicationForm from "../components/application-form.svelte";
     import Hero from "../components/hero.svelte";
-    import Members from "../components/members.svelte";
     import Events from "../components/events.svelte";
 
-    import qr_code from "../assets/img/qr_code.jpg";
+    import qr_code from "../assets/img/qr_code.png";
     import beams from "../assets/img/1-beams.webp";
     import ToastSuccess from "../components/toast-success.svelte";
     import ToastError from "../components/toast-error.svelte";
-    import CoderushPopup from "../components/coderush-popup.svelte";
-    import { onMount } from "svelte";
-    import { registrationDeadline } from "$lib/data";
+    import { areApplicationsOpen } from "$lib/utils";
 
     export let form;
     let success: boolean = false;
     let error: boolean = false;
     let successText: string = "";
     let errorText: string = "";
-    let showPopup: boolean = false;
-
-    onMount(() => {
-        setTimeout(() => {
-            if (registrationDeadline > new Date()) {
-                showPopup = true;
-            }
-        }, 500);
-    });
 
     function showSuccess(text = "Application Recieved!") {
         success = true;
@@ -52,7 +40,7 @@
 </script>
 
 <svelte:head>
-    <title>GDSC ITU</title>
+    <title>GDG on Campus ITU</title>
     <meta
         name="description"
         content="Google Developer Student Club society of Information Technology University of Punjab, Pakistan"
@@ -81,7 +69,7 @@
             src={beams}
             alt="beams"
         />
-        <ApplicationForm className="z-50" disabled={true} />
+        <ApplicationForm className="z-50" disabled={!areApplicationsOpen()} />
         <div class=" h-12" />
     </div>
     <div class=" w-full px-4 md:px-0 pb-20 grid place-items-center">
@@ -93,5 +81,3 @@
         />
     </div>
 </div>
-
-<CoderushPopup bind:showPopup />

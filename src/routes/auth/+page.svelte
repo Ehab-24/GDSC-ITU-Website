@@ -122,7 +122,7 @@
 
     const a = document.createElement("a");
     a.style.display = "none";
-    a.download = "gdsc-applications-fall-2023";
+    a.download = "gdg-applications-fall-2023";
     a.href = url;
     a.click();
 
@@ -133,7 +133,7 @@
 </script>
 
 <svelte:head>
-  <title>GDSC ITU | Admin</title>
+  <title>GDG on Campus ITU | Admin</title>
   <meta name="description" content="Admin page only meant for site admins" />
 </svelte:head>
 
@@ -193,9 +193,9 @@
           <th scope="col" class="px-6 py-3">
             <span class="sr-only">Edit</span>
           </th>
-          <th scope="col" class="px-6 py-3">
-            <span class="sr-only">Delete</span>
-          </th>
+          <!-- <th scope="col" class="px-6 py-3"> -->
+          <!--   <span class="sr-only">Delete</span> -->
+          <!-- </th> -->
         </tr>
       </thead>
       <tbody>
@@ -234,14 +234,14 @@
               >
             </td>
 
-            <td class="px-6 py-4 text-right">
-              <button
-                on:click={() => deleteApplication(a._id || "")}
-                class="font-medium text-xs w-7 p-2 rounded-full hover:bg-black/[0.05] dark:hover:bg-white/10 text-gray-400 hover:underline"
-              >
-                <FaTrashAlt />
-              </button>
-            </td>
+            <!-- <td class="px-6 py-4 text-right"> -->
+            <!--   <button -->
+            <!--     on:click={() => deleteApplication(a._id || "")} -->
+            <!--     class="font-medium text-xs w-7 p-2 rounded-full hover:bg-black/[0.05] dark:hover:bg-white/10 text-gray-400 hover:underline" -->
+            <!--   > -->
+            <!--     <FaTrashAlt /> -->
+            <!--   </button> -->
+            <!-- </td> -->
           </tr>
         {/each}
       </tbody>

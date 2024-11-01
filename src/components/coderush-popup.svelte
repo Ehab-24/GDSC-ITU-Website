@@ -43,11 +43,11 @@
         class="text-center my-12 md:mx-16 text-gray-700 dark:text-gray-300 text-sm"
       >
         We are looking for passionate students who want to learn and grow with
-        us. If you are interested in joining GDSC ITU, please fill out the form
+        us. If you are interested in joining GDG on Campus ITU, please fill out the form
         below.
       </p>
 
-      <RegisterNowCta />
+      <RegisterNowCta onClick={() => {}} />
 
       <p
         class="text-xs mb-12 whitespace-nowrap text-gray-500 dark:text-gray-400"
