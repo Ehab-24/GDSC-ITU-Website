@@ -108,8 +108,6 @@
         .toString();
     });
 
-    console.log(main);
-
     return [headers, ...main].join("\n");
   }
   function downloadCSV() {

@@ -5,6 +5,7 @@
     import user from "../assets/icons/user.svg";
     import FaPhone from "svelte-icons/fa/FaPhone.svelte";
     import Radio from "./radio.svelte";
+    import Checkbox from "./checkbox.svelte";
     import Textarea from "./textarea.svelte";
     import CTA from "./cta.svelte";
     import { enhance } from "$app/forms";
@@ -141,28 +142,29 @@
                 {disabled}
                 class="flex flex-wrap gap-4 md:gap-8 justify-start md:justify-center w-full"
             >
-                <Radio name="team" value="marketing" id="marketing"
-                    >Marketing</Radio
+                <Checkbox name="team" value="marketing" id="marketing"
+                    >Marketing</Checkbox
                 >
-                <Radio name="team" value="event" id="event"
-                    >Event Management</Radio
+                <Checkbox name="team" value="event" id="event"
+                    >Event Management</Checkbox
                 >
-                <Radio
+                <Checkbox
                     name="team"
                     value="design_and_media"
-                    id="design_and_media">Design & Media</Radio
+                    id="design_and_media">Design & Media</Checkbox
                 >
-                <Radio name="team" value="decor" id="decor">Decor</Radio>
-                <Radio name="team" value="logistics" id="logistics"
-                    >Logistics</Radio
+                <Checkbox name="team" value="decor" id="decor">Decor</Checkbox>
+                <Checkbox name="team" value="logistics" id="logistics"
+                    >Logistics</Checkbox
                 >
-                <Radio
+                <Checkbox
                     name="team"
                     value="competitive_programming"
-                    id="competitive_programming">Competitive programming</Radio
+                    id="competitive_programming"
+                    >Competitive programming</Checkbox
                 >
-                <Radio name="team" value="development" id="development"
-                    >Development</Radio
+                <Checkbox name="team" value="development" id="development"
+                    >Development</Checkbox
                 >
             </fieldset>
         </div>

@@ -100,7 +100,7 @@ export const actions = {
             contact: (data.get("contact-number") as string) || "",
             studentId: studentId,
             department: (data.get("department") as string) || "",
-            team: (data.get("team") as string) || "",
+            team: ((data.getAll("team") as string[]) || []).join(","),
             reason: (data.get("reason") as string) || "",
             experience: (data.get("experience") as string) || "",
             status: "pending",
